@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class DossierWriter implements ItemWriter<Dossier> {
     private final DossierRepository dossierRepository;
     @Override
-    public void write(Chunk<? extends Dossier> chunk) throws Exception {
+    public void write(Chunk<? extends Dossier> chunk) {
         dossierRepository.saveAll(chunk);
     }
 }

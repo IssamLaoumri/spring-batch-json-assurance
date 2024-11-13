@@ -25,7 +25,10 @@ public class MedicineReferenceInitializer {
                         //new MedicineReference(null, "Ibuprofène", 8.0, 0.6),
                         new MedicineReference(null, "Amoxicilline", 12.0, 0.8),
                         new MedicineReference(null, "Aspirine", 4.0, 0.65),
-                        new MedicineReference(null, "Doliprane", 3.5, 0.75)
+                        new MedicineReference(null, "Doliprane", 3.5, 0.75),
+                        new MedicineReference(null, "Diazepam", 10.0, 0.75),
+                        new MedicineReference(null, "Metformine", 15.0, 0.85),
+                        new MedicineReference(null, "Oméprazole", 9.0, 0.75)
                 );
                 repository.saveAll(medicines);
                 log.info("{} medicines have been initialized in the database.", medicines.size());

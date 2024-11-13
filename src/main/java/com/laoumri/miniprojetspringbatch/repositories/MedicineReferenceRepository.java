@@ -7,4 +7,5 @@ import java.util.UUID;
 
 public interface MedicineReferenceRepository extends JpaRepository<MedicineReference, UUID> {
     MedicineReference findByName(String name);
+    boolean existsByName(String name);
 }

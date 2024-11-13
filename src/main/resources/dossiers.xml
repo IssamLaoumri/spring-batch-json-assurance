@@ -1,0 +1,57 @@
+<assures>
+    <Dossier xmlns="https://springframework.org/batch/sample/io/oxm/domain">
+        <nomAssure>Belhaj</nomAssure>
+        <numeroAffiliation>AFF987654</numeroAffiliation>
+        <immatriculation>IMM567890</immatriculation>
+        <lienParente>conjoint</lienParente>
+        <montantTotalFrais>300.0</montantTotalFrais>
+        <prixConsultation>80.0</prixConsultation>
+        <nombrePiecesJointes>4</nombrePiecesJointes>
+        <nomBeneficiaire>Nour</nomBeneficiaire>
+        <dateDepotDossier>2024-11-12</dateDepotDossier>
+        <traitements>
+            <Traitement>
+                <codeBarre>3344556677</codeBarre>
+                <existe>true</existe>
+                <nomMedicament>Aspirine</nomMedicament>
+                <typeMedicament>Antalgique</typeMedicament>
+                <prixMedicament>6.0</prixMedicament>
+            </Traitement>
+            <Traitement>
+                <codeBarre>7766554433</codeBarre>
+                <existe>false</existe>
+                <nomMedicament>Diazepam</nomMedicament>
+                <typeMedicament>Anxiolytique</typeMedicament>
+                <prixMedicament>10.0</prixMedicament>
+            </Traitement>
+        </traitements>
+    </Dossier>
+
+    <Dossier xmlns="https://springframework.org/batch/sample/io/oxm/domain">
+        <nomAssure>El Amrani</nomAssure>
+        <numeroAffiliation>AFF135792</numeroAffiliation>
+        <immatriculation>IMM876543</immatriculation>
+        <lienParente>soeur</lienParente>
+        <montantTotalFrais>250.0</montantTotalFrais>
+        <prixConsultation>70.0</prixConsultation>
+        <nombrePiecesJointes>5</nombrePiecesJointes>
+        <nomBeneficiaire>Hanae</nomBeneficiaire>
+        <dateDepotDossier>2024-11-13</dateDepotDossier>
+        <traitements>
+            <Traitement>
+                <codeBarre>5544332211</codeBarre>
+                <existe>true</existe>
+                <nomMedicament>Metformine</nomMedicament>
+                <typeMedicament>Antidiabétique</typeMedicament>
+                <prixMedicament>15.0</prixMedicament>
+            </Traitement>
+            <Traitement>
+                <codeBarre>9988776655</codeBarre>
+                <existe>true</existe>
+                <nomMedicament>Oméprazole</nomMedicament>
+                <typeMedicament>Antiacide</typeMedicament>
+                <prixMedicament>9.0</prixMedicament>
+            </Traitement>
+        </traitements>
+    </Dossier>
+</assures>

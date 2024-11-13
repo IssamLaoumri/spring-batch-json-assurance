@@ -20,21 +20,26 @@ public class Dossier {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String nomAssure;
+    @Transient
     private String numeroAffiliation;
+    @Transient
+    private double prixConsultation;
+    @Transient
+    private int nombrePiecesJointes;
+    @Transient
+    private double remboursementConsultation;
+
     private String immatriculation;
     private String lienParente;
     private double montantTotalFrais;
-    private double prixConsultation;
-    private int nombrePiecesJointes;
     private String nomBeneficiaire;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    private Date dateDepotDossier;
+    //@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private String dateDepotDossier;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Traitement> traitements;
 
     // Autres propriété
-    private double remboursementConsultation;
     private double totalRemboursement;
 }

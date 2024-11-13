@@ -19,11 +19,11 @@ public class TraitementRemboursementProcessor implements ItemProcessor<Dossier, 
     private final MedicineReferenceRepository referenceRepository;
 
     @Override
-    public Dossier process(Dossier item) throws Exception {
+    public Dossier process(Dossier item) {
         List<Traitement> traitements = new ArrayList<>();
         for (Traitement traitement : item.getTraitements()) {
             MedicineReference reference = referenceRepository.findByName(traitement.getNomMedicament());
-            double remboursementTraitement = traitement.getPrixMedicament() * reference.getRefundRate();
+            double remboursementTraitement = reference.getPrice() * reference.getRefundRate();
             traitement.setMontantRemboursable(remboursementTraitement);
             traitements.add(traitement);
         }
